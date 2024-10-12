@@ -1,0 +1,48 @@
+.steps{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+}
+.step{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #2196f3;
+    padding: 10px;
+}
+.step.active{
+    background-color: #4caf50;
+    color: #ffff;
+}
+.button button{
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #4caf50;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button button:hover{
+    background-color: #3e8e41;
+}
+.button button:active{
+    background-color: #388e3c;
+}
+.button button:active:hover{
+    background-color: #388e3c;
+}
+.button button:disabled{
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+.button button:disabled:hover{
+    background-color: #cccccc;
+}

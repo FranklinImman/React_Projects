@@ -1,0 +1,30 @@
+.tool-tip {
+    width: 150px; /* Use lowercase 'px' */
+    height: 40px;
+    background-color: rgb(75, 75, 230);
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.tool-tip:hover {
+    background-color: rgb(107, 107, 253);
+}
+
+.tool {
+    position: absolute;
+    top: calc(100% - 50px);
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 14px;
+    min-width: 200px;
+    border-radius: 5px;
+}
