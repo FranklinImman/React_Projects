@@ -44,15 +44,15 @@ function App() {
     </div>
 
       <div  className="container">
-      <button className='btn btn-success' onClick={()=>paginate(1)}>First</button>
-      <button className='btn btn-primary' disabled={currentPage===1} onClick={()=>paginate(currentPage-1)}>Previous</button>
+      <button className='btn btn-success m-1' onClick={()=>paginate(1)}>First</button>
+      <button className='btn btn-primary m-2' disabled={currentPage===1} onClick={()=>paginate(currentPage-1)}>Previous</button>
       {new Array(totalPages).fill(0).map((_,index)=>{
         return (
-          <button key={index+1} onClick={()=>paginate(index+1)} className={currentPage===index+1?'btn btn-info':'btn btn-light'}>{index+1}</button>
+          <button key={index+1} onClick={()=>paginate(index+1)} className={currentPage===index+1?'btn btn-info m-1':'btn btn-light m-1'}>{index+1}</button>
         )
       })}
-      <button className='btn btn-primary' disabled={currentPage===totalPages} onClick={()=>paginate(currentPage+1)}>Next</button>
-      <button  className='btn btn-success' onClick={()=>paginate(10)}>Last</button>
+      <button className='btn btn-primary m-1 ' disabled={currentPage===totalPages} onClick={()=>paginate(currentPage+1)}>Next</button>
+      <button  className='btn btn-success m-2' onClick={()=>paginate(10)}>Last</button>
       </div>
 
     </>
